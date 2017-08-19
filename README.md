@@ -19,6 +19,16 @@ Packages:
 - com.technoboom.MiniDuckSimulator
 - com.technoboom.AdventureGame
 
+## 2. Observer
+Description:
+
+A subject maintains a list of observers and notifies them
+automatically of any state changes (usually by calling
+one of their methods).
+
+Packages:
+- com.technoboom.WeatherStation
+
 ## Resources:
 1. Eric Freeman & Elisabeth Robson "Head First Design Patterns"
 (https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124)

@@ -14,11 +14,11 @@ package com.technoboom.MiniDuckSimulator;
 public class ModelDuck extends Duck {
     public ModelDuck() {
         flyBehavior = new FlyNoWay();
-        quackBehavior = new MuteQuack();
+        quackBehavior = new Quack();
     }
 
     @Override
     public void display() {
-        System.out.println("[Look] Bait for ducks");
+        System.out.println("[Display] Bait for ducks");
     }
 }

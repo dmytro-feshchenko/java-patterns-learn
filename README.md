@@ -9,6 +9,16 @@ This repository was created for storing some experimental solutions
 and shows my learning curve.
 Most of this samples you can meet in books from Resources section.
 
+## 1. Strategy Pattern
+Description:
+
+Defines a family of algorithms, encapsulates each algorithm and
+makes the algorithms interchangeable within that family.
+
+Packages:
+- com.technoboom.MiniDuckSimulator
+- com.technoboom.AdventureGame
+
 ## Resources:
 1. Eric Freeman & Elisabeth Robson "Head First Design Patterns"
 (https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124)

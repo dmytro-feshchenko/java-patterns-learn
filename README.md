@@ -29,6 +29,7 @@ one of their methods).
 Packages:
 - com.technoboom.WeatherStation - uses custom Subject and Observer
 - com.technoboom.WeatherStationStandard - uses Java Core Observable classes
+- com.technoboom.SwingObserverSample - sample with Swing Action Listeners and GUI
 
 ## Resources:
 1. Eric Freeman & Elisabeth Robson "Head First Design Patterns"

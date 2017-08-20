@@ -27,7 +27,8 @@ automatically of any state changes (usually by calling
 one of their methods).
 
 Packages:
-- com.technoboom.WeatherStation
+- com.technoboom.WeatherStation - uses custom Subject and Observer
+- com.technoboom.WeatherStationStandard - uses Java Core Observable classes
 
 ## Resources:
 1. Eric Freeman & Elisabeth Robson "Head First Design Patterns"

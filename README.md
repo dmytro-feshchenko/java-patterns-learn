@@ -31,6 +31,15 @@ Packages:
 - com.technoboom.WeatherStationStandard - uses Java Core Observable classes
 - com.technoboom.SwingObserverSample - sample with Swing Action Listeners and GUI
 
+## 3. Decorator
+Description:
+Allows behavior to be added to an individual object, either
+statically or dynamically, without affecting a behavior of the
+other objects from the same class.
+
+Packages:
+- com.technoboom.StarbuzzCoffee
+
 ## Resources:
 1. Eric Freeman & Elisabeth Robson "Head First Design Patterns"
 (https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124)

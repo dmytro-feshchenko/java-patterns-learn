@@ -39,6 +39,9 @@ other objects from the same class.
 
 Packages:
 - com.technoboom.StarbuzzCoffee
+- com.technoboom.LowerCaseInputStreamDecorator -
+extends java.io.FilterInputStream to create custom decorator
+which can be used with java.io.* classes.
 
 ## Resources:
 1. Eric Freeman & Elisabeth Robson "Head First Design Patterns"

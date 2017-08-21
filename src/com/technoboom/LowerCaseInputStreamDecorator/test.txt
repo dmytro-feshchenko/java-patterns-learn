@@ -1,0 +1,1 @@
+It should be string with all lower case letters. So, please, transform it for your needs.

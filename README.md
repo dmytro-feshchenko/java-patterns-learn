@@ -43,6 +43,14 @@ Packages:
 extends java.io.FilterInputStream to create custom decorator
 which can be used with java.io.* classes.
 
+## 4. Simple Factory
+Description:
+Used for encapsulation some mutable part of code designed
+for creating an object to new separate object.
+
+Packages:
+- com.technoboom.PizzaFactory
+
 ## Resources:
 1. Eric Freeman & Elisabeth Robson "Head First Design Patterns"
 (https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124)

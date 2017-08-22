@@ -33,6 +33,7 @@ Packages:
 
 ## 3. Decorator
 Description:
+
 Allows behavior to be added to an individual object, either
 statically or dynamically, without affecting a behavior of the
 other objects from the same class.
@@ -43,10 +44,15 @@ Packages:
 extends java.io.FilterInputStream to create custom decorator
 which can be used with java.io.* classes.
 
-## 4. Simple Factory
+## 4. Simple Factory and Factory Method
 Description:
-Used for encapsulation some mutable part of code designed
+
+Simple Factory used for encapsulation some mutable part of code designed
 for creating an object to new separate object.
+
+Factory Method is creational pattern that uses factory methods to deal with a problem
+of creating objects without having to specify the exact class
+of the object which will be created.
 
 Packages:
 - com.technoboom.PizzaFactory

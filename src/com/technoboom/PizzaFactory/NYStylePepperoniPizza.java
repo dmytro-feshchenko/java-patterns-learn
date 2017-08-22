@@ -12,13 +12,11 @@ package com.technoboom.PizzaFactory;
  * @since 1.0
  */
 public class NYStylePepperoniPizza extends Pizza {
-    @Override
-    public void prepare() {
-        System.out.println("Prepare pepperoni pizza in NY style");
-    }
+    public NYStylePepperoniPizza() {
+        name = "NY Style Pepperoni Pizza";
+        dough =  "Thin Crust Dough";
+        sauce =  "Pepperoni Sauce";
 
-    @Override
-    public void bake() {
-        System.out.println("Bake pepperoni pizza in NY style");
+        toppings.add("Grated Reggiano Cheese");
     }
 }

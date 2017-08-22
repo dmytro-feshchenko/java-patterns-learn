@@ -12,13 +12,11 @@ package com.technoboom.PizzaFactory;
  * @since 1.0
  */
 public class NYStyleCheesePizza extends Pizza {
-    @Override
-    public void prepare() {
-        System.out.println("Prepare cheese pizza in NY style");
-    }
+    public NYStyleCheesePizza() {
+        name = "NY Style Sauce and Cheese Pizza";
+        dough =  "Thin Crust Dough";
+        sauce =  "Marinara Sauce";
 
-    @Override
-    public void bake() {
-        System.out.println("Bake cheese pizza in NY style");
+        toppings.add("Grated Reggiano Cheese");
     }
 }

@@ -12,13 +12,16 @@ package com.technoboom.PizzaFactory;
  * @since 1.0
  */
 public class ChicagoStyleCheesePizza extends Pizza {
-    @Override
-    public void prepare() {
-        System.out.println("Prepare cheese pizza in Chicago style");
+    public ChicagoStyleCheesePizza() {
+        name = "Chicago Style Sauce and Cheese Pizza";
+        dough =  "Bold Crust Dough";
+        sauce =  "Chili Sauce";
+
+        toppings.add("Grated Reggiano Cheese");
     }
 
     @Override
-    public void bake() {
-        System.out.println("Bake cheese pizza in Chicago style");
+    public void cut() {
+        System.out.println("Cutting the pizza into square slices");
     }
 }

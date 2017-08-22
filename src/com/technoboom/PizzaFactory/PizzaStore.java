@@ -11,17 +11,12 @@ package com.technoboom.PizzaFactory;
  * @version 1.0
  * @since 1.0
  */
-public class PizzaStore {
-    private SimplePizzaFactory factory;
-
-    public PizzaStore(SimplePizzaFactory factory) {
-        this.factory = factory;
-    }
+public abstract class PizzaStore {
 
     public Pizza orderPizza(String type) {
         Pizza pizza;
 
-        pizza = factory.createPizza(type);
+        pizza = createPizza(type);
 
         pizza.prepare();
         pizza.bake();
@@ -30,4 +25,6 @@ public class PizzaStore {
 
         return pizza;
     }
+
+    abstract Pizza createPizza(String type);
 }

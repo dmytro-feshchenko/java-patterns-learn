@@ -11,14 +11,14 @@ package com.technoboom.PizzaFactory;
  * @version 1.0
  * @since 1.0
  */
-public class PepperoniPizza extends Pizza {
+public class NYStylePepperoniPizza extends Pizza {
     @Override
     public void prepare() {
-        System.out.println("Prepare pepperoni pizza");
+        System.out.println("Prepare pepperoni pizza in NY style");
     }
 
     @Override
     public void bake() {
-        System.out.println("Bake pepperoni pizza");
+        System.out.println("Bake pepperoni pizza in NY style");
     }
 }

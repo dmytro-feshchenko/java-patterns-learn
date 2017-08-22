@@ -2,8 +2,8 @@ package com.technoboom.PizzaFactory;
 
 /**
  * Created by IntelliJ IDEA.
- * Date: 8/21/17
- * Time: 10:31 PM
+ * Date: 8/22/17
+ * Time: 11:40 AM
  * Project: patterns-learn
  * Package: com.technoboom.PizzaFactory
  *
@@ -11,7 +11,8 @@ package com.technoboom.PizzaFactory;
  * @version 1.0
  * @since 1.0
  */
-public class SimplePizzaFactory {
+public class NYPizzaStore extends PizzaStore {
+    @Override
     public Pizza createPizza(String type) {
         Pizza pizza = null;
 

@@ -1,4 +1,6 @@
-package com.technoboom.PizzaFactory.ingridients;
+package com.technoboom.PizzaFactory.factories;
+
+import com.technoboom.PizzaFactory.ingridients.*;
 
 /**
  * Created by IntelliJ IDEA.
@@ -14,7 +16,7 @@ package com.technoboom.PizzaFactory.ingridients;
 public class ChicagoPizzaIngridientFactory implements PizzaIngredientFactory {
     @Override
     public Dough createDough() {
-        return new ThichCrustDough();
+        return new ThinCrustDough();
     }
 
     @Override
@@ -39,6 +41,6 @@ public class ChicagoPizzaIngridientFactory implements PizzaIngredientFactory {
 
     @Override
     public Veggies[] createVeggies() {
-        return { new BlackOlives(), new Spinach(), new EggPlant() };
+        return new Veggies[]{ new BlackOlives(), new Spinach(), new EggPlant() };
     }
 }

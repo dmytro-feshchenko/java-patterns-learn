@@ -1,4 +1,6 @@
-package com.technoboom.PizzaFactory.ingridients;
+package com.technoboom.PizzaFactory.factories;
+
+import com.technoboom.PizzaFactory.ingridients.*;
 
 /**
  * Created by IntelliJ IDEA.

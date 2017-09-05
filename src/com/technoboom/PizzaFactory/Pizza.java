@@ -1,5 +1,7 @@
 package com.technoboom.PizzaFactory;
 
+import com.technoboom.PizzaFactory.ingridients.*;
+
 import java.util.ArrayList;
 
 /**
@@ -15,31 +17,37 @@ import java.util.ArrayList;
  */
 public abstract class Pizza {
     String name;
-    String dough;
-    String sauce;
+    Dough dough;
+    Sauce sauce;
+    Veggies[] veggies;
+    Cheese cheese;
+    Pepperoni pepperoni;
+    Clams clams;
     ArrayList<String> toppings = new ArrayList<>();
 
-    public void prepare() {
-        System.out.println("Preparing pizza: " + name);
-        System.out.println("Tossing dough...");
-        System.out.println("Adding sauce...");
-        System.out.println("Adding toppings:");
-        for (int i = 0; i < toppings.size(); i++) {
-            System.out.println("Topping " + (i + 1) + ": " + toppings.get(i));
-        }
-    }
-    public void bake() {
+    abstract void prepare();
+
+    void bake() {
         System.out.println("Bake for 25 minutes at 350");
     }
 
-    public void cut() {
+    void cut() {
         System.out.println("Cut pizza: make 6 pieces");
     }
-    public void box() {
+
+    void box() {
         System.out.println("Use lunch box to pack the pizza");
     }
 
-    public String getName() {
+    String getName() {
         return name;
+    }
+
+    void setName(String name) {
+        this.name = name;
+    }
+
+    public String toString() {
+        return "Pizza";
     }
 }

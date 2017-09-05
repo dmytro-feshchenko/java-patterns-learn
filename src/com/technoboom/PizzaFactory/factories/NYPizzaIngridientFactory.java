@@ -1,4 +1,6 @@
-package com.technoboom.PizzaFactory.ingridients;
+package com.technoboom.PizzaFactory.factories;
+
+import com.technoboom.PizzaFactory.ingridients.*;
 
 /**
  * Created by IntelliJ IDEA.
@@ -25,7 +27,7 @@ public class NYPizzaIngridientFactory implements PizzaIngredientFactory {
     }
 
     public Veggies[] createVeggies() {
-        return { new Garlic(), new Onion(), new Mushroom(), new RedPepper() };
+        return new Veggies[]{ new Garlic(), new Onion(), new Mushroom(), new RedPepper() };
     }
 
     public Pepperoni createPepperoni() {

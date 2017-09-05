@@ -19,7 +19,7 @@ public class PizzaFactory {
         Pizza pizza = nyStore.orderPizza("cheese");
         System.out.println("Ordered pizza: " + pizza.getName());
 
-        pizza = chicagoStore.orderPizza("pepperoni");
+        pizza = chicagoStore.orderPizza("clams");
         System.out.println("Ordered pizza: " + pizza.getName());
 
     }

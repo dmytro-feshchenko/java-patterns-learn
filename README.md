@@ -44,7 +44,7 @@ Packages:
 extends java.io.FilterInputStream to create custom decorator
 which can be used with java.io.* classes.
 
-## 4. Simple Factory and Factory Method
+## 4. Simple Factory, Factory Method, Abstract Factory
 Description:
 
 Simple Factory used for encapsulation some mutable part of code designed
@@ -53,6 +53,9 @@ for creating an object to new separate object.
 Factory Method is creational pattern that uses factory methods to deal with a problem
 of creating objects without having to specify the exact class
 of the object which will be created.
+
+Abstract Factory - also called as factory of factories. It defines an interface
+responsible for creating a factory of related objects without explicitly specifying their classes.
 
 Packages:
 - com.technoboom.PizzaFactory

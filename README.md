@@ -60,6 +60,22 @@ responsible for creating a factory of related objects without explicitly specify
 Packages:
 - com.technoboom.PizzaFactory
 
+## 5. Singleton
+Description:
+
+Singleton restricts the instantiation of a class to one object.
+This is useful when exactly one object is needed to coordinate actions across the system.
+
+Packages:
+- com.technoboom.ChocolateMachine
+
+To avoid possible problems within multithreading, we can use this
+3 approaches:
+1. Synchronise getInstance method (e.g. class com.technoboom.ChocolateMachine.ChocolateBoilerSync),
+but it can slow down the speed of the method a lot
+2. Early initialize the singleton object (e.g. class com.technoboom.ChocolateMachine.ChocolateBoilerInitialized)
+3. Synchronise creating instance inside getInstance method (e.g. class com.technoboom.ChocolateMachine.ChocolateBoilerVolatile)
+
 ## Resources:
 1. Eric Freeman & Elisabeth Robson "Head First Design Patterns"
 (https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124)

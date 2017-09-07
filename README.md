@@ -16,8 +16,8 @@ Defines a family of algorithms, encapsulates each algorithm and
 makes the algorithms interchangeable within that family.
 
 Packages:
-- com.technoboom.MiniDuckSimulator
-- com.technoboom.AdventureGame
+- com.technoboom.strategy.MiniDuckSimulator
+- com.technoboom.strategy.AdventureGame
 
 ## 2. Observer
 Description:
@@ -27,9 +27,9 @@ automatically of any state changes (usually by calling
 one of their methods).
 
 Packages:
-- com.technoboom.WeatherStation - uses custom Subject and Observer
-- com.technoboom.WeatherStationStandard - uses Java Core Observable classes
-- com.technoboom.SwingObserverSample - sample with Swing Action Listeners and GUI
+- com.technoboom.observer.WeatherStation - uses custom Subject and Observer
+- com.technoboom.observer.WeatherStationStandard - uses Java Core Observable classes
+- com.technoboom.observer.SwingObserverSample - sample with Swing Action Listeners and GUI
 
 ## 3. Decorator
 Description:
@@ -39,8 +39,8 @@ statically or dynamically, without affecting a behavior of the
 other objects from the same class.
 
 Packages:
-- com.technoboom.StarbuzzCoffee
-- com.technoboom.LowerCaseInputStreamDecorator -
+- com.technoboom.decorator.StarbuzzCoffee
+- com.technoboom.decorator.LowerCaseInputStreamDecorator -
 extends java.io.FilterInputStream to create custom decorator
 which can be used with java.io.* classes.
 
@@ -58,7 +58,7 @@ Abstract Factory - also called as factory of factories. It defines an interface
 responsible for creating a factory of related objects without explicitly specifying their classes.
 
 Packages:
-- com.technoboom.PizzaFactory
+- com.technoboom.factory.PizzaFactory
 
 ## 5. Singleton
 Description:
@@ -67,14 +67,14 @@ Singleton restricts the instantiation of a class to one object.
 This is useful when exactly one object is needed to coordinate actions across the system.
 
 Packages:
-- com.technoboom.ChocolateMachine
+- com.technoboom.singleton.ChocolateMachine
 
 To avoid possible problems within multithreading, we can use this
 3 approaches:
-1. Synchronise getInstance method (e.g. class com.technoboom.ChocolateMachine.ChocolateBoilerSync),
+1. Synchronise getInstance method (e.g. class com.technoboom.singleton.ChocolateMachine.ChocolateBoilerSync),
 but it can slow down the speed of the method a lot
-2. Early initialize the singleton object (e.g. class com.technoboom.ChocolateMachine.ChocolateBoilerInitialized)
-3. Synchronise creating instance inside getInstance method (e.g. class com.technoboom.ChocolateMachine.ChocolateBoilerVolatile)
+2. Early initialize the singleton object (e.g. class com.technoboom.singleton.ChocolateMachine.ChocolateBoilerInitialized)
+3. Synchronise creating instance inside getInstance method (e.g. class com.technoboom.singleton.ChocolateMachine.ChocolateBoilerVolatile)
 
 ## Resources:
 1. Eric Freeman & Elisabeth Robson "Head First Design Patterns"

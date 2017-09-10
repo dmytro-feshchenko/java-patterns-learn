@@ -9,6 +9,14 @@ This repository was created for storing some experimental solutions
 and shows my learning curve.
 Most of this samples you can meet in books from Resources section.
 
+## List of Patterns:
+- [x] Strategy
+- [x] Observer
+- [x] Decorator
+- [x] Simple Factory, Factory Method, Abstract Factory
+- [x] Singleton
+- [x] Command
+
 ## 1. Strategy Pattern
 Description:
 
@@ -75,6 +83,17 @@ To avoid possible problems within multithreading, we can use this
 but it can slow down the speed of the method a lot
 2. Early initialize the singleton object (e.g. class com.technoboom.singleton.ChocolateMachine.ChocolateBoilerInitialized)
 3. Synchronise creating instance inside getInstance method (e.g. class com.technoboom.singleton.ChocolateMachine.ChocolateBoilerVolatile)
+
+## 6. Command
+Description:
+
+It is a behavioral design pattern in which an object is used to encapsulate all information needed to perform an action
+or trigger an event at a later time. This information includes the method name, the object that owns the method and
+values for the method parameters.
+
+Packages:
+- com.technoboom.command.UniversalRemoteControl
+
 
 ## Resources:
 1. Eric Freeman & Elisabeth Robson "Head First Design Patterns"
